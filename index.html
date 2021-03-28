@@ -1,0 +1,177 @@
+!<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Gaming Survey</h1>
+    <p id="description" class="description text-center">
+      This Survey aims to clarify the gaming trends in the industry
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="200"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which platform do you mostly play on?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your most used device</option>
+        <option value="PC">PC</option>
+        <option value="Console">Console</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Others">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Gaming to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite game genre?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Horror">Horror</option>
+        <option value="Simulation">Simulation</option>
+        <option value="MOBA">MOBA</option>
+        <option value="RPG/MMORPG">RPG/MMORPG</option>
+        <option value="Sports">Sports</option>
+        <option value="Puzzle">Puzzle</option>
+        <option value="Strategy">Strategy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What games do you play?
+        <span class="clue">(Select all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="DOTA 2"
+          type="checkbox"
+          class="input-checkbox"
+        />DOTA 2</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="League of Legends"
+          type="checkbox"
+          class="input-checkbox"
+        />League of Legends</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Counter Strike"
+          type="checkbox"
+          class="input-checkbox"
+        />Counter Strike</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Grand Theft Auto"
+          type="checkbox"
+          class="input-checkbox"
+        />Grand Theft Auto</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Minecraft"
+          type="checkbox"
+          class="input-checkbox"
+        />Minecraft</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
